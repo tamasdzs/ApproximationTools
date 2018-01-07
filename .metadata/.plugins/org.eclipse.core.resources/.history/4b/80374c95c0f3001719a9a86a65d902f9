@@ -1,0 +1,6 @@
+#ifndef __APPROXIMATORWITHJACOBIAN_INCLUDED__
+#define __APPROXIMATORWITHJACOBIAN_INCLUDED__
+
+#include "Approximator.h"
+
+#endif

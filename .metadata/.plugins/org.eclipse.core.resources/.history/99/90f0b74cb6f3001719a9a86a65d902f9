@@ -1,0 +1,10 @@
+#ifndef __IAPPROXIMATOR_INCLUDED__
+#define __IAPPROXIMATOR_INCLUDED__
+
+template<typename T>
+class IApproximator
+{
+
+};
+
+#endif

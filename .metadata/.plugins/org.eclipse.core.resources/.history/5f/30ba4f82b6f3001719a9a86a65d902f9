@@ -1,0 +1,16 @@
+#ifndef __IAPPROXIMATOR_INCLUDED__
+#define __IAPPROXIMATOR_INCLUDED__
+
+template<typename T>
+class IApproximator
+{
+	private:
+
+	public:
+	IApproximator() {}
+	virtual ~IApproximator() {}
+
+	virtual getApproximator() = 0;
+};
+
+#endif

@@ -1,0 +1,21 @@
+#ifndef __IAPPROXIMATOR_INCLUDED__
+#define __IAPPROXIMATOR_INCLUDED__
+
+#include <vector>
+
+template<typename T>
+class IApproximator
+{
+	private:
+
+	public:
+	IApproximator() {}
+	virtual ~IApproximator() {}
+
+	virtual std::vector<T> getApproximator() = 0;
+	virtual std::vector<T> getOptimalNonLinParamSet() = 0;
+	virtual std::vector<T> getOptimalLinParamSet() = 0;
+
+};
+
+#endif

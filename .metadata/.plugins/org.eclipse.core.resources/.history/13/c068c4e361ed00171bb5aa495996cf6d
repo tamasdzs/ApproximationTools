@@ -1,0 +1,15 @@
+CC=g++
+CFLAGS=-c -std=c++0x -I ./eigen -I ./headers
+LDFLAGS=
+LIBS=
+SOURCES=./src/main.cpp ./src/OrtFunSys.cpp ./src/Hermite.cpp ./src/OrtCompresser.cpp ./src/NelderMead.cpp ./src/MatchingPursuit.cpp
+OBJECTS=$(SOURCES:.cpp=.o)
+EXECUTABLE=main
+
+all: $(SOURCES) $(EXECUTABLE)
+    
+$(EXECUTABLE): $(OBJECTS) 
+	$(CC) $(LDFLAGS) $(OBJECTS) -o $@ $(LIBS)
+
+.cpp.o:
+	$(CC) $(CFLAGS) $< -o $@ $(LIBS)

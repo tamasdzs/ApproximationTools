@@ -1,0 +1,74 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+/home/tamas/Study/varpro/dev/ApproximationTools/src/Hermite.cpp \
+/home/tamas/Study/varpro/dev/ApproximationTools/src/MatchingPursuit.cpp \
+/home/tamas/Study/varpro/dev/ApproximationTools/src/NelderMead.cpp \
+/home/tamas/Study/varpro/dev/ApproximationTools/src/OrtCompresser.cpp \
+/home/tamas/Study/varpro/dev/ApproximationTools/src/OrtFunSys.cpp \
+/home/tamas/Study/varpro/dev/ApproximationTools/src/main.cpp 
+
+OBJS += \
+./src/Hermite.o \
+./src/MatchingPursuit.o \
+./src/NelderMead.o \
+./src/OrtCompresser.o \
+./src/OrtFunSys.o \
+./src/main.o 
+
+CPP_DEPS += \
+./src/Hermite.d \
+./src/MatchingPursuit.d \
+./src/NelderMead.d \
+./src/OrtCompresser.d \
+./src/OrtFunSys.d \
+./src/main.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/Hermite.o: /home/tamas/Study/varpro/dev/ApproximationTools/src/Hermite.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/MatchingPursuit.o: /home/tamas/Study/varpro/dev/ApproximationTools/src/MatchingPursuit.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/NelderMead.o: /home/tamas/Study/varpro/dev/ApproximationTools/src/NelderMead.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/OrtCompresser.o: /home/tamas/Study/varpro/dev/ApproximationTools/src/OrtCompresser.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/OrtFunSys.o: /home/tamas/Study/varpro/dev/ApproximationTools/src/OrtFunSys.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/main.o: /home/tamas/Study/varpro/dev/ApproximationTools/src/main.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

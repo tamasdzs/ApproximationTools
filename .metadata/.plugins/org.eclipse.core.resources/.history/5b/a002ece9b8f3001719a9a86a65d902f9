@@ -1,0 +1,27 @@
+#ifndef __IAPPROXIMATOR_INCLUDED__
+#define __IAPPROXIMATOR_INCLUDED__
+
+#include <vector>
+
+namespace APPRSDK
+{
+
+
+template<typename T, typename FUNC>
+class IApproximator
+{
+	private:
+
+	public:
+	IApproximator() {}
+	virtual ~IApproximator() {}
+
+	virtual std::vector<T> getApproximator() = 0;
+	virtual std::vector<T> getOptimalNonLinParamSet() = 0;
+	virtual std::vector<T> getOptimalLinParamSet() = 0;
+	virtual ApproxStat<T> getStatistics() = 0;
+	virtual void setFunction(FUNC f) = 0;
+};
+
+}
+#endif

@@ -1,0 +1,18 @@
+#ifndef __APPROXIMATOR_INCLUDED__
+#define __APPROXIMATOR_INCLUDED__
+
+#include "IApproximator.h"
+
+namespace APPRSDK
+{
+
+template<typename T>
+class Approximator : public IApproximator<T>
+{
+	protected:
+
+	public:
+};
+
+}
+#endif

@@ -1,0 +1,14 @@
+
+**** Build of configuration Default for project approximationSDK ****
+
+make -f ../buildLib all 
+g++ -c -std=c++0x -I ../eigen -I ../headers ../src/main.cpp -o ../src/main.o 
+g++ -c -std=c++0x -I ../eigen -I ../headers ../src/OrtFunSys.cpp -o ../src/OrtFunSys.o 
+g++ -c -std=c++0x -I ../eigen -I ../headers ../src/Hermite.cpp -o ../src/Hermite.o 
+g++ -c -std=c++0x -I ../eigen -I ../headers ../src/OrtCompresser.cpp -o ../src/OrtCompresser.o 
+In file included from ../headers/OrtCompresser.h:4:0,
+                 from ../src/OrtCompresser.cpp:1:
+../headers/Compresser.h:5:24: fatal error: EcgSigPrep.h: No such file or directory
+../buildLib:15: recipe for target '../src/OrtCompresser.o' failed
+compilation terminated.
+make: *** [../src/OrtCompresser.o] Error 1

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;approximationSDK/headers/IApproximator.cpp&apos; to &apos;IApproximator.h&apos;" description="Rename resource &apos;IApproximator.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="headers/IApproximator.cpp" name="IApproximator.h" stamp="1515336346560" updateReferences="true"/>
+</session>

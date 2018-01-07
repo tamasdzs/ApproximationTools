@@ -1,0 +1,22 @@
+#ifndef __APPROXIMATOR_INCLUDED__
+#define __APPROXIMATOR_INCLUDED__
+
+#include "IApproximator.h"
+
+namespace APPRSDK
+{
+
+template<typename T>
+class Approximator : public IApproximator<T>
+{
+	protected:
+		std::vector<T> _signal;
+		std::vector<T> _nonLinParams;
+
+		IFunctionSystem* _functionSystem;
+
+	public:
+};
+
+}
+#endif

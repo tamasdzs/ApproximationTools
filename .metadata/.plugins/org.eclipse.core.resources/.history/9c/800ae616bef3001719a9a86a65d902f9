@@ -1,0 +1,34 @@
+#ifndef __IAPPROXIMATOR_INCLUDED__
+#define __IAPPROXIMATOR_INCLUDED__
+
+#include <vector>
+
+namespace APPRSDK
+{
+
+/*! \brief Interface for concrete Approximator classes
+ *         Contains the methods to be implemented by children Approximator classes.
+ *
+ *  The IApproximator interface has to be implemented by all concrete Approximator
+ *  classes. The interface has two template parameters:
+ *  T : type of the signal and function system used for the approximation.
+ *  FUNC : A function type for costfun and Jacobian.
+ */
+template<typename T, typename FUNC>
+class IApproximator
+{
+	private:
+
+	public:
+	IApproximator() {}
+	virtual ~IApproximator() {}
+
+	virtual std::vector<T> getApproximator() = 0;
+	virtual std::vector<T> getOptimalNonLinParamSet() = 0;
+	virtual std::vector<T> getOptimalLinParamSet() = 0;
+	virtual ApproxStat<T> getStatistics() = 0;
+	virtual void setFunction(FUNC f) = 0;
+};
+
+}
+#endif
